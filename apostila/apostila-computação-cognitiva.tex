@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt,oneside]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{apostila}
+\usepackage{indentfirst}
+\usepackage{etoc}
+\usepackage{lettrine}
+\hypersetup{%
+   bookmarks=,%
+   bookmarksnumbered=,%
+   pdfauthor=Dr. Wendell F. S. Diniz%
+}
+\title{Computação Cognitiva}
+\author{Wendell F. S. Diniz}
+\date{01/01/20}
+\companion{https://github.com/thejesusbr/apostila-computacao-cognitiva}
+
+\renewcommand{\baselinestretch}{1.5}
+
+
+
+\newcommand*\chaptertoc{%
+  \setcounter{tocdepth}{3}%
+  \renewcommand{\etocbkgcolorcmd}{\color{unisblue!20}}
+  \renewcommand{\etocleftrulecolorcmd}{\color{unisblue!20}}
+  \renewcommand{\etocrightrulecolorcmd}{\color{unisblue!20}}
+  \renewcommand{\etocbottomrulecolorcmd}{\color{unisblue!20}}
+  \renewcommand{\etoctoprulecolorcmd}{\color{unisblue!20}}
+  \renewcommand{\etocbelowtocskip}{0pt\relax}
+  \etocframedstyle [1]{%
+    %\fbox{%
+      \makebox[\linewidth][l]{\etocfontminusone{Neste capítulo:}}
+    %}
+  }%
+  \localtableofcontents
+  \vspace{1pt}
+}%
+
+\begin{document}
+
+\frontmatter
+\pagestyle{empty}
+\maketitle
+\newpage
+\renewcommand{\etocbkgcolorcmd}{\relax}
+\renewcommand{\etocleftrulecolorcmd}{\color{white}}
+\renewcommand{\etocrightrulecolorcmd}{\color{white}}
+\renewcommand{\etocbottomrulecolorcmd}{\color{white}}
+\renewcommand{\etoctoprulecolorcmd}{\color{white}}
+ \etocframedstyle [1]{%
+    %\fbox{%
+      \makebox[\linewidth][l]{\etocfontminusone{\Huge\contentsname}}
+    %}
+  }%
+\tableofcontents
+
+\mainmatter
+
+\pagestyle{fancy}
+ 
+\chapter{Introdução}
+
+  \chaptertoc
+
+  \lettrine{Q}{uando} falamos em Computação Cognitiva, então, estamos falando de uma maneira de criar programas que tomam decisões de modo similar ao processo do raciocínio humano...
+  
+  Uma das primeiras noções...
+  
+  \section{Inteligência Artificial}
+  
+  Inteligência Artificial, ou IA...
+  
+  \section{Aprendizado de Máquina}
+  
+  Aprendizado de Máquina (ML)...
+ 
+\end{document}
